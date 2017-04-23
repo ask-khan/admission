@@ -15,8 +15,8 @@
        $login = $_POST['login'];
        $password = $_POST['password'];
 
-       $statement  = $this->db->prepare("SELECT id FROM users WHERE login = :login AND password = :password");
-       $statement->execute( array(':login' => $login , ':password' => $password ));
+       $statement  = $this->db->prepare("SELECT id FROM users WHERE username = :username AND password = :password");
+       $statement->execute( array(':username' => $login , ':password' => $password ));
        $count = $statement->rowCount();
 
        if ( $count > 0 ) {
