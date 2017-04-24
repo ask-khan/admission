@@ -12,7 +12,7 @@
 
     public function Index ()
     {
-      $this->view->render( 'index/login' );
+      $this->view->render( 'login/index' );
     }
 
     public function run () {

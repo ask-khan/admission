@@ -14,7 +14,7 @@
 
     public function Index ()
     {
-      $this->view->render( 'index/help' );
+      $this->view->render( 'help/index' );
     }
 
     function other( $arg = false )
