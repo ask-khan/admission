@@ -15,11 +15,13 @@
         header('location: ../login');
         exit;
       }
+
+      $this->view->js = array('dashboard/js/default.js');
     }
 
     public function Index ()
     {
-      $this->view->render( 'index/dashboard' );
+      $this->view->render( 'dashboard/index' );
     }
 
     public function logout() {
@@ -28,12 +30,8 @@
       exit;
     }
 
-    public function add(){
-
-      $emailAddress = $_POST['emailAddress'];
-      $password = $_POST['password'];
-
-      print_r( $emailAddress );
+    public function saveUserData(){
+      $this->model->saveUserData();
     }
 
   }
