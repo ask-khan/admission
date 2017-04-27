@@ -25,6 +25,6 @@ $(document).ready(function() {
   });
 
   $(document.body).on('click', '.del' ,function(){
-    
+      var id = $(this).attr('rel');
   });
 });
