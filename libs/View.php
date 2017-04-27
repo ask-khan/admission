@@ -7,7 +7,7 @@
 
     function __construct()
     {
-      echo 'this is a view';
+      //echo 'this is a view';
     }
 
     public function render ( $name, $noinclude = false )
