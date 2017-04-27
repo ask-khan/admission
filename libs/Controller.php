@@ -6,7 +6,7 @@
 
     function __construct()
     {
-      echo 'Main Controllers';
+      //echo 'Main Controllers';
       $this->view = new View();
     }
 

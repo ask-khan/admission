@@ -34,6 +34,9 @@
       $this->model->saveUserData();
     }
 
+    public function getUserData(){
+      $this->model->getUserData();
+    }
   }
 
 
