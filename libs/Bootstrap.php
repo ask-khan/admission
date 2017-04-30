@@ -7,6 +7,9 @@
       $url = rtrim( $url, '/');
       $url = explode ('/', $url );
 
+      // if favicon is exist.
+      if ($_SERVER['REQUEST_URI']=='/favicon.ico') exit('');
+
       if ( empty( $url[0] ) ) {
         require 'controllers/index.php';
         $controllers = new Index();

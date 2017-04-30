@@ -37,6 +37,10 @@
     public function getUserData(){
       $this->model->getUserData();
     }
+
+    public function deleteUserData() {
+      $this->model->deleteUserData();
+    }
   }
 
 
