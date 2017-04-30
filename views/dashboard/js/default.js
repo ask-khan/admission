@@ -18,6 +18,7 @@ $(document).ready(function() {
     var data = $(this).serialize();
 
     $.post(url, data, function(o) {
+
       $("#listInserts").append('<div>' + o['userName'] + '<a class="del" rel="'+ o['id'] + '" href="" >X</a></div>');
     });
 
@@ -26,5 +27,8 @@ $(document).ready(function() {
 
   $(document.body).on('click', '.del' ,function(){
       var id = $(this).attr('rel');
+      $.post( 'dashboard/deleteUserData', { 'id': id },function( o ){
+
+      });
   });
 });
