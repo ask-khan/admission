@@ -19,7 +19,6 @@
         require 'views/' . $name . '.php';
         require 'views/footer.php';
       }
-
     }
   }
 ?>

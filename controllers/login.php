@@ -18,10 +18,7 @@
     public function run () {
       $this->model->run();
     }
-    // function other( $arg = false )
-    // {
-    //   $this->view->render('index/login');
-    // }
+    
   }
 
 ?>
