@@ -7,7 +7,7 @@
     function __construct()
     {
       parent::__construct();
-      echo "This is an Error";
+      //echo "This is an Error";
 
     }
 

@@ -16,12 +16,18 @@
   </head>
   <body>
     <div id="header" >
-      Header
+      <?php if ( Session::get('loggedIn') == false ){ ?>
       <a href="<?php echo URL; ?>index"> Index</a>
       <a href="<?php echo URL; ?>help"> Help</a>
+      <?php } ?>
       <?php if ( Session::get('loggedIn') == true ){ ?>
-        <a href="<?php echo URL; ?>dashboard/logout"> Logout </a>
         <a href="<?php echo URL; ?>dashboard"> Dashboard</a>
+        <a href="<?php echo URL; ?>dashboard/logout"> Logout </a>
+
+        <?php if (Session::get('type') == 'owner'){ ?>
+          <a href="<?php echo URL; ?>user"> Users </a>
+        <?php }?>
+
       <?php } else { ?>
         <a href="<?php echo URL; ?>login"> Login</a>
       <?php } ?>
