@@ -19,7 +19,7 @@
        $statement->execute( array(':username' => $login , ':password' => $password ));
        $data = $statement->fetch();
        $count = $statement->rowCount();
-      
+
        if ( $count > 0 ) {
          Session::init();
          Session::set('type', $data['type']);
